@@ -1,3 +1,33 @@
+## 1.0.0 (2024-11-21)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.115 ([#11](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/11)) ([9850a68](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/9850a687f8ef1c6d500374db3daaecdbf7925a5b))
+* **deps:** update node.js to v22 ([8e435ad](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/8e435ada3c726ba94ddda15a55c0a857b1d2f67a))
+* **deps:** update plugin com.gradle.develocity to v3.18.2 ([#13](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/13)) ([eab5009](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/eab50097bf0e62976cf2cb8ccba7ab71374ef979))
+* **deps:** update plugin multijvmtesting to v1.3.1 ([#10](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/10)) ([f1765ea](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/f1765ea9b06b8b8c5a2154412bdfccb6ecf61a2f))
+* **deps:** update plugin multijvmtesting to v1.3.2 ([#27](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/27)) ([bdbea0f](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/bdbea0f51719f0b1ccd906d19b4015b640481364))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.14 ([#18](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/18)) ([5f1a7ba](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/5f1a7ba29d18ec0573cb65627a1eb93c195449a4))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.15 ([#28](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/28)) ([9bcfc5c](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/9bcfc5c138e08ebb16c50ca7e7b80ab1ac059412))
+
+### Bug Fixes
+
+* fix the project name ([a9c3374](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/a9c33741938ff9254e54a2cb53dde877c6955f38))
+
+### Build and continuous integration
+
+* add token permissions ([93d8f2c](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/93d8f2cad3192394be8ec29c0897e4601bc23c33))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.13 ([#12](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/12)) ([db3bf17](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/db3bf17a13bced1b09a29d052b018825fb1df4d3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.14 ([#14](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/14)) ([d7de0d0](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/d7de0d0a96c3ba61f8583209c65399babc67d8d8))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.15 ([#15](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/15)) ([070e9eb](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/070e9ebdef2fb931424f4289e7dacd87a093d2da))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.16 ([#16](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/16)) ([419cbb2](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/419cbb2b6bd4c13426ec85a14ebe7a525270892c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.17 ([#17](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/17)) ([881314b](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/881314b42e5ae2e2e9fbe359334c861919bda812))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.18 ([#25](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/25)) ([8769c44](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/8769c442736bc9fc342a2482ca406497bea44d8d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.22 ([#26](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/26)) ([517fced](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/517fced2aed0779ae797e93b123255d1f3fb5db2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.23 ([#29](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/29)) ([cc3fdf0](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/cc3fdf0f8964b51a9359c55cdaccb2681b2828ec))
+* modify build for application development ([#7](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/7)) ([6303700](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/6303700ca343c520b4ba694c00cd5ee03864c882))
+* **renovate:**  use `with` when importing the configuration instead of `assert` ([472758b](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/472758b366617215cbbdb2f2f5f5079494eb9a3a))
+
 ## [0.2.1](https://github.com/DanySK/Template-for-Kotlin-Multiplatform-Projects/compare/0.2.0...0.2.1) (2024-08-06)
 
 ### Dependency updates
