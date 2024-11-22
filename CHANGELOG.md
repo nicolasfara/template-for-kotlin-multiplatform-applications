@@ -1,3 +1,15 @@
+## [1.0.1](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/compare/1.0.0...1.0.1) (2024-11-22)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.0.21 (patch) ([#1](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/1)) ([78e935f](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/78e935f6f485730891a7ae0cdebd7df44dd16ef7))
+* **deps:** update plugin publishoncentral to v5.1.11 ([902c49f](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/902c49f66bea32f51a5c071acfb380c8c1901f81))
+
+### Build and continuous integration
+
+* drop unreleased staging repos on OSSRH ([#30](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/30)) ([0861e84](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/0861e84a58f658d703a3266fb50d8b87ba02b9fc))
+* drop unreleased staging repos on OSSRH via curl ([#32](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/issues/32)) ([7e55147](https://github.com/DanySK/template-for-kotlin-multiplatform-applications/commit/7e55147a5427f061e9956c411a16295b1984c56d))
+
 ## 1.0.0 (2024-11-21)
 
 ### Dependency updates
