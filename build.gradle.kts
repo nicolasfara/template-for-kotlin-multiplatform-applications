@@ -23,10 +23,16 @@ repositories {
 
 android {
     namespace = group.toString()
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    compileSdk =
+        libs.versions.android.compileSdk
+            .get()
+            .toInt()
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdk = libs.versions.android.minSdk.get().toInt()
+        minSdk =
+            libs.versions.android.minSdk
+                .get()
+                .toInt()
     }
 }
 
@@ -110,12 +116,13 @@ kotlin {
     }
 
     val os = OperatingSystem.current()
-    val excludeTargets = when {
-        os.isLinux -> kotlin.targets.filterNot { "linux" in it.name }
-        os.isWindows -> kotlin.targets.filterNot { "mingw" in it.name }
-        os.isMacOsX -> kotlin.targets.filter { "linux" in it.name || "mingw" in it.name }
-        else -> emptyList()
-    }.mapNotNull { it as? KotlinNativeTarget }
+    val excludeTargets =
+        when {
+            os.isLinux -> kotlin.targets.filterNot { "linux" in it.name }
+            os.isWindows -> kotlin.targets.filterNot { "mingw" in it.name }
+            os.isMacOsX -> kotlin.targets.filter { "linux" in it.name || "mingw" in it.name }
+            else -> emptyList()
+        }.mapNotNull { it as? KotlinNativeTarget }
 
     configure(excludeTargets) {
         compilations.configureEach {
