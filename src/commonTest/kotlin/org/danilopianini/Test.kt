@@ -1,11 +1,14 @@
-import io.kotest.core.spec.style.StringSpec
-import io.kotest.matchers.shouldNotBe
+package org.danilopianini
 
-class Test :
-    StringSpec(
-        {
-            "a simple test" {
-                true shouldNotBe false
-            }
-        },
-    )
+import kotlin.test.Test
+import kotlin.test.assertNotEquals
+
+/**
+ * Dummy test to check that the test environment is working.
+ */
+class Test {
+    @Test
+    fun trueShouldNotBeFalse() {
+        assertNotEquals(illegal = true, actual = false, message = "true should not be false")
+    }
+}
