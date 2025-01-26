@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.multiplatform)
-    alias(libs.plugins.kotest.multiplatform)
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.kotlin.qa)
@@ -39,33 +38,21 @@ android {
 kotlin {
     jvmToolchain(21)
 
+    compilerOptions {
+        allWarningsAsErrors = true
+    }
+
     androidTarget()
 
     jvm {
-        testRuns["test"].executionTask.configure {
-            useJUnitPlatform()
-        }
-        compilations.all {
-            compileTaskProvider.configure {
-                compilerOptions {
-                    jvmTarget = JvmTarget.JVM_1_8
-                }
-            }
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_1_8
         }
     }
 
     sourceSets {
-        val commonMain by getting { }
-        val commonTest by getting {
-            dependencies {
-                implementation(libs.bundles.kotlin.testing.common)
-                implementation(libs.bundles.kotest.common)
-            }
-        }
-        val jvmTest by getting {
-            dependencies {
-                implementation(libs.kotest.runner.junit5)
-            }
+        commonTest.dependencies {
+            implementation(libs.kotlin.test)
         }
     }
 
