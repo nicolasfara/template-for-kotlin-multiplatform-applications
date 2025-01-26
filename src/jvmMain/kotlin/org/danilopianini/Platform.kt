@@ -1,11 +1,11 @@
 package org.danilopianini
 
 /**
- * JS Platform.
+ * JVM platform.
  */
 actual object Platform {
     /**
-     * JS platform name.
+     * Platform name.
      */
-    actual val name = "JS"
+    actual val name = "JVM"
 }
