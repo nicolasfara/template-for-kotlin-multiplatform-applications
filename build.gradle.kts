@@ -40,6 +40,7 @@ kotlin {
 
     compilerOptions {
         allWarningsAsErrors = true
+        freeCompilerArgs.add("-Xexpect-actual-classes")
     }
 
     androidTarget()
@@ -90,17 +91,6 @@ kotlin {
     watchosSimulatorArm64(nativeSetup)
     tvosArm64(nativeSetup)
     tvosSimulatorArm64(nativeSetup)
-
-    targets.all {
-        compilations.all {
-            compileTaskProvider.configure {
-                compilerOptions {
-                    allWarningsAsErrors = true
-                    freeCompilerArgs.add("-Xexpect-actual-classes")
-                }
-            }
-        }
-    }
 
     val os = OperatingSystem.current()
     val excludeTargets =
