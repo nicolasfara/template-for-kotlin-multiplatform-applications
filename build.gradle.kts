@@ -65,7 +65,9 @@ kotlin {
 
     val nativeSetup: KotlinNativeTarget.() -> Unit = {
         binaries {
-            executable()
+            executable {
+                entryPoint = "org.danilopianini.main"
+            }
         }
     }
 
